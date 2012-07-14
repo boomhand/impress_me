@@ -83,13 +83,7 @@
           booleans : [true, false, true, false]
         });
 
-        <script type="text/javascript">
-   	 	//Define your user by initializing StackMob.User with your JSON.
-    	var user = new StackMob.User({ username: 'Bill Watterson', password: 'weirdosfromanotherplanet', profession: 'cartoonist'  });
- 
-    	//Creates the user and saves it to StackMob's database asynchronously
-    	user.create();
-  		</script>
+        
         
         //Call "create" to fire off the AJAX call to StackMob to create this object instance
         //If this is the first time StackMob has seen a 'testobject', StackMob will create the database schema automatically for you.
@@ -112,6 +106,17 @@
       });
 
 		</script>
+
+
+		<script type="text/javascript">
+   	 	//Define your user by initializing StackMob.User with your JSON.
+    	var user = new StackMob.User({ username: 'Bill Watterson', password: 'weirdosfromanotherplanet', profession: 'cartoonist'  });
+ 
+    	//Creates the user and saves it to StackMob's database asynchronously
+    	user.create();
+  		</script>
+
+  		
 		<!--
 		*************************************
 		*************************************
