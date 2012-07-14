@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script type="text/javascript" src="files/resources/lib/detectmobilebrowser.js">
+        </script>
+        <script type="text/javascript">
+         var screen_mobile = true;
+ var screen_width = 320;
+ var screen_height = 480;
+ var browser_mobile = is_mobile_browser();
+
+ if (screen_mobile && !browser_mobile && top == window)
+ {
+     top.location.href = './mob-images.html';
+ }
+        </script>
+        <title>
+            images
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="files/resources/themes/dark-gray/dark-gray.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.1.0/jquery.mobile.structure-1.1.0.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.1.0/jquery.mobile-1.1.0.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/tiggzi.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" dsid="images" id="j_0" class="type-interior"
+        data-theme='a' data-add-back-btn="false" data-back-btn-text="Back">
+            <div data-role="header" data-position='fixed' data-theme='a' name="mobileheader1"
+            id="j_2" class=' mobileheader1 '>
+                <h1 dsid="mobileheader1">
+                    Caption
+                </h1>
+            </div>
+            <div data-role="content" id="j_3" name="mobilecontainer1" class="mobilecontainer1"
+            dsid="mobilecontainer1" data-theme='a'>
+                <link href="images.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="images.js">
+                </script>
+                <div name="mobilelabel4" id="j_4" dsid="mobilelabel4" data-role="tiggr_label" class=' mobilelabel1 '>
+                    Welcome to TheBestReason app
+                </div>
+                <div data-role="fieldcontain" class="mobiletextinput1">
+                    <input type="text" name="accessToken" dsid="accessToken" id="j_5" value="Input"
+                    tabIndex="1" data-theme='a' class=' mobiletextinput1 ' />
+                </div>
+                <div class="mobilebutton1_wrapper ">
+                    <a data-role="button" name="mobilebutton2" dsid="mobilebutton2" class=' mobilebutton1'
+                    id='j_6' data-corners='true' data-theme='a' tabIndex="2">
+                    friends
+                    </a>
+                </div>
+                <div name="mobilelabel8" id="j_7" dsid="mobilelabel8" data-role="tiggr_label" class=' mobilelabel2 '>
+                    Friends :
+                </div>
+                <div class="mobilegrid1_wrapper">
+                    <table id="j_8" class="mobilegrid1" dsid="mobilegrid2" cellpadding=0 cellspacing=0>
+                        <col style="width:35.7%;">
+                            <col style="width:64.3%;">
+                                <tr>
+                                    <td id="j_9" name="mobilegridcell3" class="mobilegridcell1" colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <div class="mobileimage1_div">
+                                                <img class="mobileimage1" src="files/views/assets/image/no-image.jpg" id="j_10"
+                                                dsid="mobileimage2" name="mobileimage2" />
+                                            </div>
+                                            <div name="userId" id="j_11" dsid="userId" data-role="tiggr_label" class=' mobilelabel3 '>
+                                                User Id
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="j_12" name="mobilegridcell4" class="mobilegridcell2" colspan=1 rowspan=1>
+                                        <div class="cell-wrapper">
+                                            <div name="userName" id="j_13" dsid="userName" data-role="tiggr_label" class=' mobilelabel4 '>
+                                                User name
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                    </table>
+                </div>
+                <div class="mobilebutton2_wrapper ">
+                    <a data-role="button" name="mobilebutton3" dsid="mobilebutton3" class=' mobilebutton2'
+                    id='j_14' data-corners='true' data-theme='a' tabIndex="3">
+                    profile
+                    </a>
+                </div>
+            </div>
+            <div data-role="footer" class="mobilefooter1" name="mobilefooter1" dsid="mobilefooter1"
+            data-position="fixed" id="j_15" data-theme='a'>
+            </div>
+        </div>
+    </body>
+
+</html>
