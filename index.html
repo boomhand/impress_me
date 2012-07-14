@@ -31,7 +31,7 @@
 		*************************************
 		*************************************
 		-->
-		<script type="text/javascript">      StackMob.init({        appName : "impress_me",        clientSubdomain : "mohcineoubenal",        publicKey : "08f17aae-f98c-460c-aa98-961a04a6120f",        apiVersion : 0      });		</script>
+		<script type="text/javascript">      StackMob.init({        appName : "impress_me2",        clientSubdomain : "mohcineoubenal",        publicKey : "5885e396-82f2-4d9d-9a26-26d69c41df1e",        apiVersion : 0      });		</script>
 		<!--
 		*************************************
 		*************************************
@@ -83,6 +83,14 @@
           booleans : [true, false, true, false]
         });
 
+        <script type="text/javascript">
+   	 	//Define your user by initializing StackMob.User with your JSON.
+    	var user = new StackMob.User({ username: 'Bill Watterson', password: 'weirdosfromanotherplanet', profession: 'cartoonist'  });
+ 
+    	//Creates the user and saves it to StackMob's database asynchronously
+    	user.create();
+  		</script>
+        
         //Call "create" to fire off the AJAX call to StackMob to create this object instance
         //If this is the first time StackMob has seen a 'testobject', StackMob will create the database schema automatically for you.
         //When the server is done, AJAX callbacks are fired: 'success' / 'error'
@@ -123,7 +131,7 @@
 		<link rel="stylesheet" href="file://localhost/Users/mohcineoubenal/Downloads/JS-Starter-0.5.2/styles/index.css">
 	</head>
 	<body>
-		<h1>Congratulations!</h1>
+		<h1>Congratulations user!</h1>
 		<p id="runmessage">
 			Don't forget to <a href="https://stackmob.com/platform/help/tutorials/html5_js_sdk" target="_blank">initialize the JS SDK</a>!
 			<br>
