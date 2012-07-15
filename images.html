@@ -2,6 +2,14 @@
 <html>
     
     <head>
+        <script type="text/javascript">
+  StackMob.init({
+    appName: "impress_me2",
+    clientSubdomain: "mohcineoubenal",
+    publicKey: "5885e396-82f2-4d9d-9a26-26d69c41df1e",
+    apiVersion: 0
+  });
+</script>
         <script type="text/javascript" src="files/resources/lib/detectmobilebrowser.js">
         </script>
         <script type="text/javascript">
@@ -55,6 +63,13 @@
     </head>
     
     <body>
+        <script type="text/javascript">
+            //Define your user by initializing StackMob.User with your JSON.
+        var user = new StackMob.User({ username: 'Bill Watterson', password: 'weirdosfromanotherplanet', profession: 'cartoonist'  });
+             //Creates the user and saves it to StackMob's database asynchronously
+        user.create();
+        </script>
+        
         <script language="JavaScript" type="text/javascript">
                 if (navigator.userAgent.match(/iP/i))
         {
